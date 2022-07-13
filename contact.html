@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="contact/contact_script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <h1>Welcome to NYC!</h1>
+    <nav class="nav_bar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="book_trip.html">Book Your Trip</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+    <h1>My first contact form</h1>
+    <form onsubmit="return false">
+    </form>
+    <input type="text" placeholder="First Name" id="firstName"/>
+    <input type="text" placeholder="Last Name" id="lastName" />
+    <br><br>
+    <input type="email" placeholder="Email Address" id="email" />
+    <br><br>
+    <input type="text" placeholder="Address" id="address" />
+    <input type="text" placeholder="City" id="city" />
+    <br><br>
+
+    <option disabled selected value> -- select a state -- </option>
+    <select id="state">
+      <option disabled selected value> -- select a state -- </option>
+      <option value="New York ">New York</option>
+    </select>
+    <br><br>
+    <option disabled selected value> -- select a country -- </option>
+    <select id="country">
+      <option disabled selected value> -- select a country -- </option>
+      <option value="United States">United States</option>
+    </select>
+    <br><br>
+    <input type="password" placeholder="Enter password" id="password" />
+    &nbsp;&nbsp;&nbsp;
+    <input type="password" placeholder="Enter password (check)" id="passwordCheck" />
+    <br><br>
+    <input type="checkbox" id="newsletter" />Send me monthly newsletter
+    <br><br>
+    <span>What is your question?</span>
+    <br>
+    <textarea id="question" rows="4"></textarea>
+    <br><br>
+    <button onclick="sendContact();">Send contact</button>
+
+  </main>
+  <footer>
+
+    <ul>
+      <li>
+        <a href="time_square.html">Time Square</a>
+      </li>
+      <li>
+        <a href="central_park.html">Central Park</a>
+      </li>
+      <li>
+        <a href="restaurant_guide.html">Restaurant Guide</a>
+      </li>
+      <li>
+        <a id="scrollButton"  onclick="topFunction()" >Scroll Up</a>
+      </li>
+
+    </ul>
+  </footer>
+
+</div>
+<script>
+  //Get the button:
+  mybutton = document.getElementById("scrollButton");
+
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+</script>
+</body>
+</html>

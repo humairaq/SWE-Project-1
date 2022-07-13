@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Courier New","Calibri";
+    color: black;
+    font-weight: bold;
+    background-image: url("/images/photos/nyc_skyline.jpg");
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+    background-position: center;
+    background-size:  cover;
+    margin: 0px;
+    object-fit: scale-down;
+}
+
+
+.wrapper{
+    grid:
+    "header" auto
+    "nav" 1fr
+    "main" 1fr
+    "footer"1fr
+    / 1fr;
+
+    width: 1100px;
+    border: darkgoldenrod 2px solid;
+    margin: 0px auto;
+}
+
+
+
+header{
+    width: fit-content;
+    background-color: white;
+    padding: 0px 0px 0px 0px;
+    height: 100px;
+    top: 0px;
+    width: 100%;
+    z-index: 50;
+    background-color: white;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 18px;
+}
+.nav_bar {
+    width: auto;
+    background-color: darkgoldenrod;
+    grid-area: nav;
+
+}
+footer {
+    height: max-content;
+    background-color: white;
+    color: #ffffff;
+    grid-area:footer;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px 40px;
+    overflow: hidden;
+    position: center;
+    text-align: center;
+
+}
+nav li{
+    display: inline;
+
+}
+nav li a{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.nav_bar li a:hover {
+    display: inline-block;
+    background-color: white;
+    background-position: inherit;
+
+}
+a {
+    color: #de6581;
+    font-size: 16px;
+    text-decoration: none;}
+
+
+
+
+main{
+    grid-area: main;
+    background-color: white;
+    font-family: "Gill Sans MT";
+    width: 1100px;
+
+
+
+
+}
+footer ul {
+    list-style-type: none;
+    padding: 10px 40px;
+    overflow: hidden;
+    position: center;
+    text-align: center;
+
+}
+footer li{
+    display: inline;
+
+}
+footer li a{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgoldenrod;;
+
+}
+footer li a:hover {
+
+    background-color: white;
+    background-position: inherit;
+
+}
+
+#scrollButton{
+    background-color: white;
+    background-position: inherit;
+}

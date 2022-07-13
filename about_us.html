@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about_us.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1>Welcome to NYC!</h1>
+        <nav class="nav_bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="book_trip.html">Book Your Trip</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+
+    </main>
+    <footer>
+
+        <ul>
+            <li>
+                <a href="time_square.html">Time Square</a>
+            </li>
+            <li>
+                <a href="central_park.html">Central Park</a>
+            </li>
+            <li>
+                <a href="restaurant_guide.html">Restaurant Guide</a>
+            </li>
+            <li>
+                <a id="scrollButton"  onclick="topFunction()" >Scroll Up</a>
+            </li>
+
+        </ul>
+    </footer>
+
+</div>
+<script>
+    //Get the button:
+    mybutton = document.getElementById("scrollButton");
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+</body>
+</html>

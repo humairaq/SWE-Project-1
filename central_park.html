@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/central_park.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1>Welcome to NYC!</h1>
+        <nav class="nav_bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="book_trip.html">Book Your Trip</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img src="images/photos/central_park_zoo.jpg" alt="Central Park Zoo" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/photos/rowing-on-the-lake.jpg" alt="Rowing in Central Park Lake" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/photos/met_museum.jpg" alt="Met Museum" style="width:100%">
+            </div>
+        </div>
+    <div>
+        <blockquote>
+        Discover the wide variety of animals that make Manhattan their home by paying a visit to the Central Park Zoo.
+        From snow monkeys to sea lions, puffins to penguins, you can see all kinds of animals that live in Manhattan.
+        On the lake in Central Park, you may either rent a boat or go on a gondola trip.
+        You might also like to visit to the Metropolitan Museum of Art, which is the largest art museum in the western hemisphere and features works of art from all different time periods.
+        </blockquote>
+    </div>
+    </main>
+    <footer>
+
+        <ul>
+            <li>
+                <a href="time_square.html">Time Square</a>
+            </li>
+            <li>
+                <a href="central_park.html">Central Park</a>
+            </li>
+            <li>
+                <a href="restaurant_guide.html">Restaurant Guide</a>
+            </li>
+            <li>
+                <a id="scrollButton"  onclick="topFunction()" >Scroll Up</a>
+            </li>
+
+        </ul>
+    </footer>
+
+</div>
+<script>
+    //Get the button:
+    mybutton = document.getElementById("scrollButton");
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+</body>
+</html>

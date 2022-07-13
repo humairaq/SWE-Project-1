@@ -1,0 +1,257 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Courier New","Calibri";
+  color: black;
+  font-weight: bold;
+  background-image: url("/images/photos/nyc_skyline.jpg");
+  image-rendering: optimizeQuality;
+  image-orientation: from-image;
+  background-position: center;
+  background-size:  cover;
+  margin: 0px;
+  object-fit: scale-down;
+}
+
+
+.wrapper{
+  grid:
+    "header" auto
+    "nav" 1fr
+    "main" 1fr
+    "events" 1fr
+    "calculator" 1fr
+    "contact " 1fr
+    "footer" auto
+    / 1fr;
+
+  width: 1100px;
+  border: darkgoldenrod 2px solid;
+  margin: 0px auto;
+  position: center;
+}
+
+
+
+header{
+  width: fit-content;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+  height: 100px;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  background-color: white;
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 18px;
+}
+.nav_bar {
+  width: auto;
+  background-color: darkgoldenrod;
+  grid-area: nav;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px 40px;
+  overflow: hidden;
+  position: center;
+  text-align: center;
+
+}
+nav li{
+  display: inline;
+
+}
+nav li a{
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.nav_bar li a:hover {
+  display: inline-block;
+  background-color: white;
+  background-position: inherit;
+
+}
+a {
+  color: #de6581;
+  font-size: 16px;
+  text-decoration: none;}
+
+
+
+footer {
+  height: max-content;
+  background-color: white;
+  grid-area:footer;
+}
+main{
+  grid-area: main;
+  background-color: white;
+  font-family: "Gill Sans MT";
+  width: 1100px;
+
+}
+
+blockquote{
+  padding: 5px;
+  font-size: 22px;
+  color: darkgoldenrod;
+}
+
+.calculator{
+  height: max-content;
+  grid-area: calculator;
+  background-color: white;
+
+
+
+}
+.contact{
+  height: max-content;
+  grid-area: contact;
+  background-color: blue;
+
+
+}
+
+
+.events{
+  padding: 20px 20px;
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+  padding: 5px;
+  grid-area: events;
+  background-color: white;
+
+}
+
+.columns{
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr 1fr;
+  max-height: 1400px;
+  font-size: 25px;
+  color: #BF9223;
+  font-weight: bold;
+}
+
+.column1{
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 2;
+  background-color: lightgray;
+}
+.p2{
+
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+  background-color: gray;
+  padding: 40px;
+}
+.column3{
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+  background-color: dimgray;
+}
+.p1{
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 1;
+  grid-column-end: 2;
+  padding: 40px;
+  background-color: lightgray;
+}
+.column2{
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+  background-color: gray;
+}
+.p3{
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+  background-color: dimgray;
+  padding: 40px;
+}
+
+
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+h2{
+  padding-top: 60px;
+  font-size: 18px;
+}
+.events_list{
+  padding: 5px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 10px 40px;
+  overflow: hidden;
+  position: center;
+  text-align: center;
+
+}
+footer li{
+  display: inline;
+
+}
+footer li a{
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  color: darkgoldenrod;;
+
+}
+footer li a:hover {
+
+  background-color: white;
+  background-position: inherit;
+
+}
+
+
+#scrollButton{
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+#scrollButton hover{
+  background-color: white;
+  background-position: inherit;
+}
+
+table, th, td, tfoot {
+   border:1px solid black;
+ }
