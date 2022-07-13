@@ -4,7 +4,7 @@ body {
     font-family: "Courier New","Calibri";
     color: black;
     font-weight: bold;
-    background-image: url("/images/photos/nyc_skyline.jpg");
+    background-image: url(".../images/photos/nyc_skyline.jpg");
     image-rendering: optimizeQuality;
     image-orientation: from-image;
     background-position: center;
@@ -12,8 +12,6 @@ body {
     margin: 0px;
     object-fit: scale-down;
 }
-
-
 .wrapper{
     grid:
     "header" auto
